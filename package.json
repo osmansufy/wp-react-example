@@ -1,0 +1,37 @@
+{
+  "name": "wp-react-example",
+  "version": "1.0.0",
+  "description": "A WordPress plugin that demonstrates how to use React in a WordPress plugin.",
+  "main": "index.php",
+  "scripts": {
+    "build": "wp-scripts build --progress",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:md:js": "wp-scripts lint-md-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start --progress",
+    "start:hot": "wp-scripts start --hot --progress",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@wordpress/scripts": "^29.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@wordpress/components": "^28.7.0",
+    "@wordpress/core-data": "^7.7.0",
+    "@wordpress/data": "^10.7.0",
+    "@wordpress/dom-ready": "^4.7.0",
+    "@wordpress/element": "^6.7.0",
+    "@wordpress/plugins": "^7.7.0"
+  }
+}
