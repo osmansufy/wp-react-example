@@ -1,13 +1,23 @@
 // src/lite-plugin.js
 
 import { Slot, SlotFillProvider } from "@wordpress/components";
-import { Fragment } from "@wordpress/element";
-import React from "react";
+import React, { Fragment } from "@wordpress/element";
 import { PluginArea } from "@wordpress/plugins";
+import { Link } from "react-router-dom";
 // Slot Component that will be filled by the Pro Plugin
 const MySlotFillProvider = () => {
   return (
     <Fragment>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/team">About</Link>
+          </li>
+        </ul>
+      </nav>
       {/* SlotFillProvider ensures that Slot/Fill communication works */}
       <SlotFillProvider>
         <div
